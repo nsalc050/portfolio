@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+// filepath: c:\Users\nicol\Desktop\Portfolio\portfolio\.gitignore
+# Playwright artifacts
+.playwright/
+playwright-report/
+test-results/

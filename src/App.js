@@ -1,18 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import * as THREE from './js/three.module.js';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
         <p>
           Edit <code>
             
 
             
             </code> and save to reload.
+        </p>
+
+        <p className='text-white'>
+          Hello, I'm <span className='text-blue-500'>Your Name</span>, a passionate developer.
         </p>
         <canvas id='bg'>
 
