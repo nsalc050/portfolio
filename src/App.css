@@ -70,7 +70,13 @@ button {
 }
 
 .page1 img {
-  height: auto;
+  height: 40%;
+  max-width: 40%;
+  pointer-events: none;
+}
+
+.page2 img {
+  height: 40%;
   max-width: 40%;
   pointer-events: none;
 }
@@ -81,9 +87,113 @@ h1
 }
 
 code {
-  background-color: #20232a;
+  background-color: #92d4d6;
   border-radius: 5px;
   padding: 2px 4px;
   font-family: 'Courier New', Courier, monospace;
-  
+  animation-name: myAnimation;
+  animation-duration: 10s;
+}
+@keyframes myAnimation {
+      from {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateX(50px);
+        opacity: 0.5;
+      }
+      to {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+    }
+#button.home-button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #747a8a;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#p.footer-text {
+  margin: 0;
+}
+
+constrast-box {
+  background-color: '#1f2937';
+  color: '#ffffff';
+  padding: '1.5rem';
+  border-radius: '8px';
+  margin: '1rem auto';
+  max-width: '900px'
+
+}
+.menu-wrapper {
+  margin-top: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* on wider screens show horizontal menu */
+@media (min-width: 640px) {
+  .menu-list {
+    flex-direction: row;
+  }
+}
+
+.menu-item {
+  background: transparent;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  background-color: #61dafb;
+  color: #ffffff;
+  outline: none;
+}
+
+.about-content {
+  max-width: 760px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.paragraph {
+  display: block;
+  text-align: left;
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: inherit;
+  font-size: 1rem;
 }
