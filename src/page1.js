@@ -10,7 +10,7 @@ function Page1() {
              <h1>Application Testing  Demostration</h1>
              <div className='divider' />
                 
-             <img src={logo} alt="logo" size="20px"/>
+             <img src={logo} alt="logo" size="10px"/>
             </header>
             
             <p>This is a react application demostration # 1</p>
