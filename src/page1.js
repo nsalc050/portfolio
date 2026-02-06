@@ -15,6 +15,7 @@ function Page1() {
             
             <p>This is a react application demostration # 1</p>
             <p>using react and playwright to test this and another web application</p>
+            <p>Example : Using Pokemon APi to validate pokemon information in webpage Serebii</p>
 
             <button clasname="home-button" onClick={() => navigateHome('/')}> Go Back Home </button>
         </div>
