@@ -3,7 +3,7 @@ import './App.css';
 import { Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Page1 from './page1';
 import Page2 from './page2';
-import About from './About';
+import About from './about';
 
 
 function Home() {
